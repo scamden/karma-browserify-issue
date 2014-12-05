@@ -9,12 +9,12 @@ module.exports = function (config) {
         files: [
             'bower_components/angular/angular.js',
             'bower_components/angular-mocks/angular-mocks.js',
-            'src/modules/util/*.js'
+            'src/modules/util/*.spec.js'
         ],
         exclude: [],
 
         preprocessors: {
-            'src/modules/util/*.js': ['browserify']
+            'src/modules/util/*.spec.js': ['browserify']
         },
         reporters: ['progress', /*'story',*/ 'coverage'],
 
@@ -22,7 +22,7 @@ module.exports = function (config) {
 
         colors: true,
 
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
 
         autoWatch: true,
 

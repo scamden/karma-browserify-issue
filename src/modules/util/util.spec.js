@@ -1,5 +1,7 @@
 describe('util', function () {
 
+    var regular = require('./regular-file');
+
     var util;
     beforeEach(function () {
         util = require('@grid/util');
